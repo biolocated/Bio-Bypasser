@@ -5,32 +5,37 @@ from colorama import init, Fore, Style
 init()
 
 letters = {
-    "A": "Α", "a": "α",
-    "B": "Β", "b": "β",
-    "C": "С", "c": "с",
-    "D": "D", "d": "ԁ",
-    "E": "Ε", "e": "ȩ",
-    "F": "Ғ", "f": "Ғ",
-    "G": "ԍ", "g": "ԍ",
+    "A": "Α", "a": "ɑ",
+    "B": "Β", "b": "Ь",
+    "C": "Ϲ", "c": "ϲ",
+    "D": "Ꭰ", "d": "ԁ",
+    "E": "Ε", "e": "е",
+    "F": "Ϝ", "f": "ғ",
+    "G": "Ԍ", "g": "ɡ",
     "H": "Η", "h": "һ",
-    "I": "I", "i": "i",
-    "J": "Ј", "j": "ј",
+    "I": "Ι", "i": "і",
+    "J": "Ј", "j": "ϳ",
     "K": "Κ", "k": "κ",
-    "L": "L", "l": "ӏ",
+    "L": "Ꮮ", "l": "ӏ",
     "M": "Μ", "m": "м",
-    "N": "Ν", "n": "п",
-    "O": "Ο", "o": "ο",
+    "N": "Ν", "n": "ո",
+    "O": "Ο", "o": "о",
     "P": "Ρ", "p": "р",
-    "Q": "Ԛ", "q": "ԛ",
-    "R": "Ŗ", "r": "ᴦ",
-    "S": "Ș", "s": "ş",
-    "T": "Τ", "t": "τ",
-    "U": "Џ", "u": "џ",
-    "V": "Ѵ", "v": "ѵ",
+    "Q": "Ⴓ", "q": "զ",
+    "R": "Ꭱ", "r": "г",
+    "S": "Ѕ", "s": "ѕ",
+    "T": "Τ", "t": "т",
+    "U": "Ս", "u": "ս",
+    "V": "Ѵ", "v": "ν",
     "W": "Ԝ", "w": "ԝ",
-    "X": "Χ", "x": "x",
-    "Y": "Υ", "y": "ƴ",
-    "Z": "Ζ", "z": "ᴢ"
+    "X": "Χ", "x": "х",
+    "Y": "Υ", "y": "у",
+    "Z": "Ζ", "z": "ᴢ",
+    "0": "𝟘", "1": "𝟙",
+    "2": "𝟚", "3": "𝟛",
+    "4": "𝟜", "5": "𝟝",
+    "6": "𝟞", "7": "𝟟",
+    "8": "𝟠", "9": "𝟡"
 }
 
 def translate(string):
@@ -47,12 +52,12 @@ def print_ascii_art():
      / /_/ // // /_/ /_____/ /_/ / / / ____/ ___ |___/ /__/ / /___/ _, _/
     /_____/___/\____/     /_____/ /_/_/   /_/  |_/____/____/_____/_/ |_|
     """
-    print(f"{Fore.MAGENTA}{ascii_art}{Style.RESET_ALL}\n{Fore.CYAN}--made by biolocated{Style.RESET_ALL}\n")
+    print(f"{Fore.MAGENTA}{ascii_art}{Style.RESET_ALL}\n{Fore.CYAN}--bypasser made by biolocated{Style.RESET_ALL}\n")
 
 def ask_for_input():
     try:
         while True:
-            input_text = input(f"{Fore.RED}Enter a word to translate (CTRL+C to quit): {Style.RESET_ALL}")
+            input_text = input(f"{Fore.RED}Enter a word to bypass (CTRL+C to quit): {Style.RESET_ALL}")
             translated_text = translate(input_text)
             print(f"Translated text: {translated_text}")
     except KeyboardInterrupt:
